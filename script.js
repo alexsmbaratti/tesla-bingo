@@ -36,18 +36,20 @@ function generateBingoTileNames(vehicles) {
 function populateBingoBoard(tileNames) {
     let bingoCells = document.getElementById("bingo-board");
     bingoCells.childNodes.forEach((cell, index) => {
-        let randomIndex = Math.floor(Math.random() * tileNames.length);
-        let pickedTileName = tileNames[randomIndex];
-        tileNames.splice(randomIndex, 1);
+        if (cell.innerText != "FREE") {
+            let randomIndex = Math.floor(Math.random() * tileNames.length);
+            let pickedTileName = tileNames[randomIndex];
+            tileNames.splice(randomIndex, 1);
 
-        cell.innerText = pickedTileName
-        cell.addEventListener("mouseenter", () => {
-            cell.style.backgroundColor = "#f0e68c";
-        });
+            cell.innerText = pickedTileName
+            cell.addEventListener("mouseenter", () => {
+                cell.style.backgroundColor = "#f0e68c";
+            });
 
-        cell.addEventListener("mouseleave", () => {
-            cell.style.backgroundColor = ""; // Reset
-        });
+            cell.addEventListener("mouseleave", () => {
+                cell.style.backgroundColor = ""; // Reset
+            });
+        }
     });
 }
 
