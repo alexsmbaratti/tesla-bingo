@@ -8,3 +8,24 @@ body {
     align-items: center;
     margin-top: 50px;
 }
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 5px;
+}
+
+.bingo-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    background-color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.free {
+    background-color: #ffcccb;
+}
