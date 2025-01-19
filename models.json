@@ -13,7 +13,7 @@
     },
     "Model Y": {
         "colors": ["White", "Grey", "Red", "Blue", "Black", "Wrapped"],
-        "variants": ["Original", "Refresh"]
+        "variants": ["Original", "Refresh", "Performance"]
     },
     "Cybertruck": {
         "colors": ["Wrapped"],

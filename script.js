@@ -34,9 +34,9 @@ function generateBingoTileNames(vehicles) {
 }
 
 function populateBingoBoard(tileNames) {
-    let bingoCells = document.getElementById("bingo-board");
-    bingoCells.childNodes.forEach((cell, index) => {
-        if (cell.innerText != "FREE") {
+    let bingoCells = document.querySelectorAll("#bingo-board .bingo-cell");
+    bingoCells.forEach((cell, index) => {
+        if (cell.innerText !== "FREE") {
             let randomIndex = Math.floor(Math.random() * tileNames.length);
             let pickedTileName = tileNames[randomIndex];
             tileNames.splice(randomIndex, 1);
