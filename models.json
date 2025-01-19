@@ -1,17 +1,22 @@
   {
     "Model S": {
-
+        "colors": ["White", "Grey", "Red", "Blue", "Black", "Wrapped"],
+        "variants": ["Legacy", "Plaid"]
     },
     "Model 3": {
-
+        "colors": ["White", "Grey", "Red", "Blue", "Black", "Wrapped"],
+        "variants": ["Original", "Refresh", "Performance"]
     },
     "Model X": {
-
+        "colors": ["White", "Grey", "Red", "Blue", "Black", "Wrapped"],
+        "variants": ["Plaid"]
     },
     "Model Y": {
-
+        "colors": ["White", "Grey", "Red", "Blue", "Black", "Wrapped"],
+        "variants": ["Original", "Refresh"]
     },
     "Cybertruck": {
-
+        "colors": ["Wrapped"],
+        "variants": ["Cyberbeast"]
     }
   }
