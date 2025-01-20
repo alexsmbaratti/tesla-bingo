@@ -42,12 +42,15 @@ function populateBingoBoard(tileNames) {
             tileNames.splice(randomIndex, 1);
 
             cell.innerText = pickedTileName
-            cell.addEventListener("mouseenter", () => {
-                cell.style.backgroundColor = "#f0e68c";
-            });
 
-            cell.addEventListener("mouseleave", () => {
-                cell.style.backgroundColor = ""; // Reset
+            cell.addEventListener("click", () => {
+                if (cell.dataset.clicked !== "true") {
+                    cell.style.backgroundColor = "#ffcccb";
+                    cell.dataset.clicked = "true";
+                } else {
+                    cell.style.backgroundColor = "";
+                    cell.dataset.clicked = "false";
+                }
             });
         }
     });
